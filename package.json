@@ -1,0 +1,60 @@
+{
+  "name": "sequelize-encryption-hooks",
+  "version": "0.1.0",
+  "description": "Transparent field-level encryption for Sequelize models — AES-256-GCM encryption on write, decryption on read, via lifecycle hooks. Optional HMAC blind indexes for exact-match queries.",
+  "keywords": [
+    "sequelize",
+    "encryption",
+    "hooks",
+    "aes-256-gcm",
+    "field-encryption",
+    "encrypted-attributes",
+    "blind-index",
+    "orm",
+    "security",
+    "pii"
+  ],
+  "license": "MIT",
+  "author": "Satyendra Sagar <satyendra.sagar@icloud.com>",
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "prepublishOnly": "npm run typecheck && npm run test && npm run build"
+  },
+  "peerDependencies": {
+    "sequelize": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "sequelize": "^6.37.0",
+    "sqlite3": "^5.1.7",
+    "tsup": "^8.0.0",
+    "typescript": "^5.4.0",
+    "vitest": "^3.0.0"
+  }
+}
