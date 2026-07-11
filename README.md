@@ -1,5 +1,9 @@
 # sequelize-encryption-hooks
 
+[![npm version](https://img.shields.io/npm/v/sequelize-encryption-hooks.svg)](https://www.npmjs.com/package/sequelize-encryption-hooks)
+[![CI](https://github.com/satyendra-sagar-singh/sequelize-encryption-hooks/actions/workflows/ci.yml/badge.svg)](https://github.com/satyendra-sagar-singh/sequelize-encryption-hooks/actions/workflows/ci.yml)
+[![license](https://img.shields.io/npm/l/sequelize-encryption-hooks.svg)](https://github.com/satyendra-sagar-singh/sequelize-encryption-hooks/blob/main/LICENSE)
+
 Transparent field-level encryption for [Sequelize](https://sequelize.org) v6 models. Values are encrypted with **AES-256-GCM** before they hit the database and decrypted when they come back — your application code keeps working with plaintext, while the database only ever sees ciphertext.
 
 - 🔒 AES-256-GCM (authenticated encryption, random IV per value)
