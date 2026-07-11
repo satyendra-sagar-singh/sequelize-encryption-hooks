@@ -15,7 +15,18 @@
     "pii"
   ],
   "license": "MIT",
-  "author": "Satyendra Sagar <satyendra.sagar@icloud.com>",
+  "author": {
+    "name": "Satyendra Sagar Singh",
+    "email": "satyendra.sagar@icloud.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satyendra-sagar-singh/sequelize-encryption-hooks.git"
+  },
+  "homepage": "https://github.com/satyendra-sagar-singh/sequelize-encryption-hooks#readme",
+  "bugs": {
+    "url": "https://github.com/satyendra-sagar-singh/sequelize-encryption-hooks/issues"
+  },
   "type": "module",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
