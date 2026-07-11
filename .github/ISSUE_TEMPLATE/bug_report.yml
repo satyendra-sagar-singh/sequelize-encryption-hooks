@@ -1,0 +1,47 @@
+name: Bug report
+description: Something is broken or behaving unexpectedly
+labels: [bug]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: A clear description of the bug, including what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal code that reproduces the issue — model definition, plugin config, and the operation that misbehaves.
+      render: typescript
+    validations:
+      required: true
+  - type: input
+    id: package-version
+    attributes:
+      label: sequelize-encryption-hooks version
+      placeholder: 0.1.0
+    validations:
+      required: true
+  - type: input
+    id: sequelize-version
+    attributes:
+      label: Sequelize version
+      placeholder: 6.37.x
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Node version and database dialect
+      placeholder: Node 24, PostgreSQL 16
+    validations:
+      required: true
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Security check
+      options:
+        - label: This is not a security vulnerability (those go through [SECURITY.md](../blob/main/SECURITY.md), never public issues)
+          required: true
