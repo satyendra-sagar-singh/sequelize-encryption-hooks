@@ -64,13 +64,13 @@
   },
   "devDependencies": {
     "@arethetypeswrong/cli": "^0.18.5",
-    "@types/node": "^20.14.0",
-    "@vitest/coverage-v8": "^3.2.7",
+    "@types/node": "^26.1.1",
+    "@vitest/coverage-v8": "^4.1.10",
     "publint": "^0.3.21",
     "sequelize": "^6.37.0",
-    "sqlite3": "^5.1.7",
+    "sqlite3": "^6.0.1",
     "tsup": "^8.0.0",
-    "typescript": "^5.4.0",
-    "vitest": "^3.0.0"
+    "typescript": "^7.0.2",
+    "vitest": "^4.1.10"
   }
 }
